@@ -1,9 +1,12 @@
 #subtitle {
-    animation: fadeInLeftToRightBounce 1s ease-in-out;
+    animation: fadeInLeftToRightBounce 0.8s ease-in-out;
+}
+
+#counter {
+    animation: fadeInDownToUp 1s;
 }
 
 .btn {
-    animation: fadeInDownToUp .4s ease-in-out;
     transition: 0.1s;
 }
 
