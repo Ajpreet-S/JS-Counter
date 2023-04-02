@@ -50,10 +50,35 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Tutorial</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button id="closemodalbutton" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>[tutorial text]</p>
+                <p class="lead">
+                    Welcome to Counter 😄!<br>
+                    Don't know how to count? Don't worry, we got you covered! Check out this <a href="https://www.wikihow.com/Count-to-One-Hundred" target="_blank">article</a>!<br>
+                    Hope you have fun!
+                </p>
+                <div class="border rounded-3 p-3">
+                    <div class="row pb-2 mb-2 border-bottom">
+                        <div class="col text-center"><b>Controls</b></div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">&uarr;, &rarr;</div>
+                        <div class="col text-center">Increment</div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">&darr;, &larr;</div>
+                        <div class="col text-center">Decrement</div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">[Space], [Backspace]</div>
+                        <div class="col text-center">Reset</div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">[Escape]</div>
+                        <div class="col text-center">Open tutorial</div>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -66,5 +91,6 @@
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./index.js"></script>
+<script src="./help.js"></script>
 </body>
 </html>
