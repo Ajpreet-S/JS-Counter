@@ -56,3 +56,25 @@ const countDisplay = document.getElementById('countdisplay');
     })
 })
 
+// Decrement, reset, or increment the count using keys
+document.addEventListener('keydown', (event) => {
+    const pressedKey = event.key;
+    switch (pressedKey) {
+        case 'ArrowUp':
+            for(let i = 0; i < 5; i++) {
+                increment.click();
+            }
+            break;
+        case 'ArrowRight':
+            increment.click();
+            break;
+        case 'ArrowDown':
+            for(let i = 0; i < 5; i++) {
+                decrement.click();
+            }
+            break;
+        case 'ArrowLeft':
+            decrement.click();
+            break;
+    }
+})
