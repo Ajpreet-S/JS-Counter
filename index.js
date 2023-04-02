@@ -64,20 +64,25 @@ document.addEventListener('keydown', (event) => {
             for(let i = 0; i < 5; i++) {
                 increment.click();
             }
+            increment.focus();
             break;
         case 'ArrowRight':
             increment.click();
+            increment.focus();
             break;
         case 'ArrowDown':
             for(let i = 0; i < 5; i++) {
                 decrement.click();
             }
+            decrement.focus();
             break;
         case 'ArrowLeft':
             decrement.click();
+            decrement.focus();
             break;
         case 'Backspace':
         case ' ':
             reset.click();
+            reset.focus();
     }
 })
