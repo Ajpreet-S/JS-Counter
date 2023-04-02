@@ -1,0 +1,8 @@
+#subtitle {
+    animation: fadeInLeftToRightBounce 1s ease-in-out;
+}
+
+#counter, #counter * {
+    border: aliceblue 1px solid;
+}
+
