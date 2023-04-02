@@ -76,5 +76,8 @@ document.addEventListener('keydown', (event) => {
         case 'ArrowLeft':
             decrement.click();
             break;
+        case 'Backspace':
+        case ' ':
+            reset.click();
     }
 })
