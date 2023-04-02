@@ -2,7 +2,14 @@
     animation: fadeInLeftToRightBounce 1s ease-in-out;
 }
 
-#counter, #counter * {
-    border: aliceblue 1px solid;
+.btn {
+    animation: fadeInDownToUp .4s ease-in-out;
+    transition: 0.1s;
 }
+
+.btn:hover {
+    transform: scale(105%);
+}
+
+
 
