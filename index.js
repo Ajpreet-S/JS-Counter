@@ -1,13 +1,6 @@
-// HTML elements
-const countDisplay = document.getElementById('countdisplay');
-const decrement = document.getElementById('decrement');
-const reset = document.getElementById('reset');
-const increment = document.getElementById('increment');
-
-
 // Counter object
-// Using closures to make _count private
 const counter = (() => {
+    // Uses closures to make these properties private
     let _count = 0;
     let _color = 'silver';
     function _setColor() {
@@ -19,6 +12,7 @@ const counter = (() => {
         return _color = 'green';
     }
 
+    // _count and _color will only be accessible by these methods in the object below
     return {
         decrement: () => {
             --_count;
@@ -35,26 +29,30 @@ const counter = (() => {
         getCount: () => _count,
         getColor: () => _color,
     }
-
 })();
 
 // Click listeners for the 3 buttons
+const decrement = document.getElementById('decrement');
+const reset = document.getElementById('reset');
+const increment = document.getElementById('increment');
 decrement.addEventListener('click', () => {
     counter.decrement();
 });
-
 reset.addEventListener('click', () => {
     counter.reset();
 });
-
 increment.addEventListener('click', () => {
     counter.increment();
 });
 
+// When any counter button is clicked, change the count displayed to the user
+const pageTitle = document.getElementById('pagetitle');
+const countDisplay = document.getElementById('countdisplay');
 [decrement, reset, increment].forEach(button => {
     button.addEventListener('click', () => {
         countDisplay.innerText = counter.getCount();
         countDisplay.style.color = counter.getColor();
+        pageTitle.innerText = 'Counter | ' + counter.getCount();
     })
 })
 
